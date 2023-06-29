@@ -14,8 +14,8 @@
 
     <div class="main">
       <div class="instructions">
-        <h1>Choose Your Weapon</h1>
-        <h4>First to score 5 points wins the game</h4>
+        <h1 id="scoreInfo">Choose Your Weapon</h1>
+        <h4 id="scoreMessage">First to score 5 points wins the game</h4>
       </div>
 
       <div class="scores-container">
@@ -53,6 +53,13 @@
       <a href="https://github.com/samizak" target="_blank"></a>
     </footer>
   </body>
+
+  <div id="overlay" class="overlay">
+    <div id="endgameModal" class="modal active">
+      <p id="endgameMsg" class="modal-title">ABC won!</p>
+      <button class="btn btn-restart" id="restartBtn">Play again</button>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </html>

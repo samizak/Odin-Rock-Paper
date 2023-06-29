@@ -103,3 +103,51 @@ button {
   text-align: center;
   font-size: 1.5em;
 }
+
+.overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.overlay.active {
+  display: block;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #222831;
+  text-align: center;
+  font-size: 30px;
+  user-select: none;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-title {
+  font-size: 1.4em;
+}
+
+.btn-restart {
+  height: 70px;
+}
