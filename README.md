@@ -2,7 +2,7 @@
 
 ## About
 
-Simple Rock-Paper-Scissors game built using HTML, CSS and Javascript
+Simple Rock-Paper-Scissors game built using HTML, CSS and Javascript for The Odin Project.
 
 ## Live Preview
 
